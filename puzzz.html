@@ -15,24 +15,24 @@
 
 <body>
 <div>
-    <img id="cat1" src="img/cat/cat1.jpg" alt="cat1" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(1)"><br>
-    <img id="cat2" src="img/cat/cat2.jpg" alt="cat2" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(2)"><br>
-    <img id="cat3" src="img/cat/cat3.jpg" alt="cat3" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(3)"><br>
-    <img id="cat4" src="img/cat/cat4.jpg" alt="cat4" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(4)"><br>
-    <img id="cat5" src="img/cat/cat5.jpg" alt="cat5" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(5)">
+    <img id="model1" src="img/cat/model1.jpg" alt="model1" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(1)"><br>
+    <img id="model2" src="img/cat/model2.jpg" alt="model2" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(2)"><br>
+    <img id="model3" src="img/cat/model3.jpg" alt="model3" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(3)"><br>
+    <img id="model4" src="img/cat/model4.jpg" alt="model4" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(4)"><br>
+    <img id="model5" src="img/cat/model5.jpg" alt="model5" style="box-shadow: red 4px 4px 9px;" onclick="changeImage(5)">
 </div>
 
 
 <script>
     function changeImage(index) {
-        let img=document.getElementById("cat"+index);
+        let img=document.getElementById("model"+index);
 
-        if(img.alt === ("cat"+index)){
+        if(img.alt === ("model"+index)){
             img.alt = "monkey"+index;
         } else if(img.alt === ("monkey"+index)) {
             img.alt = "panda"+index;
         } else if(img.alt === ("panda"+index)){
-            img.alt = "cat"+index;
+            img.alt = "model"+index;
         }
 
 
@@ -41,13 +41,14 @@
     }
 
 function check() {
-    let img1= document.getElementById('cat1');
-    let img2= document.getElementById("cat2");
-    let img3= document.getElementById("cat3");
-    let img4 = document.getElementById("cat4");
-    let img5 = document.getElementById("cat5");
-    if (img1.alt === "cat1" && img2.alt === "cat2" && img3.alt ==="cat3" && img4.alt ==="cat4" && img5.alt ==="cat5")
+    let img1= document.getElementById('model1');
+    let img2= document.getElementById("model2");
+    let img3= document.getElementById("model3");
+    let img4 = document.getElementById("model4");
+    let img5 = document.getElementById("model5");
+    if (img1.alt === "model1" && img2.alt === "model2" && img3.alt ==="model3" && img4.alt ==="model4" && img5.alt ==="model5")
     {
+      
         img1.style.boxShadow = "red 4px 4px 9px";
         img2.style.boxShadow = "red 4px 4px 9px";
         img3.style.boxShadow = "red 4px 4px 9px";
